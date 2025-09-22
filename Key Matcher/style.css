@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 2rem;
+    background: #000;
+    color: white;
+}
+
+.container{
+    text-align: center;
+}
+
+#circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: white;
+    border: 5px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    transition: background-color 0.3s ease;
+}
+
+#letter{
+    font-size: 10rem;
+    font-weight: bold;
+    color: black;
+}
+
+#circle.correct{
+    background-color: #003400;
+}
+
+#circle.incorrect{
+    background-color: #540000;
+}
+
+#circle{
+    background: black;
+}
+
+#letter{
+    color: white;
+}
