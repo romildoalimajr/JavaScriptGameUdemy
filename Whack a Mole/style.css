@@ -1,0 +1,60 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: aliceblue;
+  font-size: 20px;
+}
+ 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 140px);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+ 
+.hole {
+  width: 140px;
+  height: 140px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid grey;
+}
+ 
+.hole span {
+  pointer-events: none;
+  font-size: 72px;
+}
+ 
+.hole.mole {
+  background-color: brown;
+}
+ 
+.scoreboard {
+  margin-top: 20px;
+  font-size: 1.6em;
+}
+ 
+#start-btn {
+  margin-top: 30px;
+  padding: 16px 32px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(39, 39, 39);
+  background-color: white;
+  border: 3px solid rgb(39, 39, 39);
+  border-radius: 16px;
+  cursor: pointer;
+}
+ 
+#start-btn.disabled,
+#start-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
