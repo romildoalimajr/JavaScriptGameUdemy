@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Cascadia Mono", Consolas, "Courier New", monospace;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.5rem;
+  user-select: none;
+  overflow: hidden;
+}
+
+#guess-input {
+  padding: 16px;
+  font-size: 1.5rem;
+  width: 240px;
+  margin-right: 12px;
+  background-color: #111;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  -moz-appearance: textfield;
+}
+
+#guess-input::-webkit-inner-spin-button,
+#guess-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  padding: 14px 28px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  background-color: #000;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#restart-btn {
+  display: none;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#message {
+  margin-top: 30px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
