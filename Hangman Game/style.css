@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+ 
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+ 
+.game-container {
+  background: white;
+  padding: 30px 45px;
+  border-radius: 12px;
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 1000px;
+}
+ 
+.game-container p {
+  font-size: 1.2rem;
+}
+ 
+#word {
+  font-size: 3em;
+  letter-spacing: 0.3em;
+  margin-bottom: 22px;
+}
+ 
+#keyboard {
+  margin-top: 30px;
+}
+ 
+.key-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7.5px;
+}
+ 
+.key {
+  display: inline-block;
+  margin: 6px;
+  padding: 15px 21px;
+  min-width: 66px;
+  background-color: #eee;
+  border: 1px solid #444;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+ 
+.key:hover:not(.disabled) {
+  background-color: #ddd;
+}
+ 
+.key.disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+ 
+#reset-btn {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: none;
+  border-radius: 7.5px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  background-color: #eee;
+  border: 1px solid #444;
+  transition: background-color 0.3s, color 0.3s;
+}
+ 
+#reset-btn:hover {
+  background-color: #ddd;
+  color: black;
+}
