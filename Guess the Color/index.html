@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="game-container">
+      <h1>Guess the Color</h1>
+      <div class="rgb-display" id="rgbDisplay">rgb(?, ?, ?)</div>
+      <div id="choices" class="color-choices"></div>
+      <div id="feedback" class="feedback"></div>
+      <button id="nextBtn">Next</button>
+    </div>
+    <div class="rgb-explanation">
+      <h2>What is RGB?</h2>
+      <p>
+        RGB stands for <strong>Red, Green, Blue</strong> — the three colors used
+        to create every color you see on a screen. Each value in
+        <code>rgb(R, G, B)</code> ranges from 0 to 255, and controls the
+        intensity of that color.
+      </p>
+      <p>
+        For example, <code>rgb(255, 0, 0)</code> means full red, no green, and
+        no blue — which creates bright red. <code>rgb(0, 0, 0)</code> is black,
+        and <code>rgb(255, 255, 255)</code> is white.
+      </p>
+      <p>Try to match the RGB code to the correct color box!</p>
+    </div>
+</body>
+</html>
