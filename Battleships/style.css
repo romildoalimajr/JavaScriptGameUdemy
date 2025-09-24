@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: aliceblue;
+}
+
+h1,
+h2 {
+    margin-bottom: 30px;
+}
+
+.grid-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.labels-col {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4px;
+}
+
+.corner-spacer,
+.labels-col div,
+.labels-row div {
+    width: 45px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.labels-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    gap: 4px;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+#player-board .cell {
+    cursor: not-allowed;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #cce;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.hit {
+    background-color: red;
+}
+
+.miss {
+    background-color: rgb(255, 210, 188);
+}
+
+.ship {
+    background-color: navy;
+}
+
+.boards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+#reset-button {
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #0077cc;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset-button:hover {
+    background-color: #005fa3;
+}
+
+#commentary {
+    margin: 20px auto;
+    padding: 12px 20px;
+    max-width: 600px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    color: #333;
+    font-style: italic;
+}
+
+#status {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #222;
+}
