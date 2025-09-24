@@ -5,7 +5,7 @@ const resetButton = document.getElementById("reset-button");
 const commentaryEl = document.querySelector("#commentary");
 
 const gridSize = 10;
-const numShips = 2;
+const numShips = 10;
 
 let playerShipPositions = [];
 let aiShipPositions = [];
@@ -124,7 +124,7 @@ function playerTurn(event) {
   const index = parseInt(event.target.dataset.index);
   const cell = event.target;
 
-  if (isCellTried()) return;
+  if (isCellTried(cell)) return;
 
   const coord = indexToCoordString(index);
   const isHit = aiShipPositions.includes(index);
