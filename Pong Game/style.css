@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: aliceblue;
+  overflow: hidden;
+}
+
+#introduction {
+  text-align: center;
+  padding: 40px;
+}
+
+#introduction h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 52px;
+  margin-bottom: 30px;
+}
+
+#introduction button {
+  font-size: 27px;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 3px solid black;
+  transition: background-color 0.3s ease;
+}
+
+#introduction button:hover {
+  background-color: #ff9900;
+}
+
+#gameContainer {
+  display: none;
+  text-align: center;
+}
+
+#gameCanvas {
+  border: 3px solid;
+  border-radius: 4px;
+  background-color: white;
+  cursor: none;
+}
+
+#scoreText {
+  font-family: "consolas", monospace;
+  font-size: 100px;
+}
+
+#resetBtn {
+  background-color: #ffcc00;
+  font-family: "Permanent Marker", cursive;
+  font-size: 25px;
+  width: 100px;
+  height: 50px;
+  border: 4px solid;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#resetBtn:hover {
+  background-color: #ff9900;
+}

@@ -1,0 +1,15 @@
+export const CONFIG = {
+    boardColor: "#135A23",
+    paddle1Color: "#FF4500",
+    paddle2Color: "#6495ED",
+    paddleBorder: "black",
+    ballColor: "#FFA500",
+    ballBorderColor: "black",
+    paddlePadding: 5,
+    ballRadius: 12.5,
+    paddleSpeed: 50,
+    accelerationFactor: 1.25,
+    maxBallSpeed: 5,
+    initialBallSpeed: 2,
+    tickRate: 10,
+};
